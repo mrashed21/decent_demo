@@ -1,7 +1,7 @@
 "use client";
 
 const MainNavbar = () => {
-  return <section>MainNavbar</section>;
+  return <section className="hidden">MainNavbar</section>;
 };
 
 export default MainNavbar;

@@ -1,6 +1,6 @@
 "use client";
 const TopNavbar = () => {
-  return <section>TopNavbar</section>;
+  return <section className="hidden">TopNavbar</section>;
 };
 
 export default TopNavbar;

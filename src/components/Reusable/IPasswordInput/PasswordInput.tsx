@@ -4,7 +4,7 @@ import { FieldError, UseFormRegister } from "react-hook-form";
 import { LuEyeOff } from "react-icons/lu";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 
-interface InputPasswordsProps {
+interface PasswordsInputProps {
   register: UseFormRegister<any>;
   name: string;
   lable?: string;
@@ -13,8 +13,7 @@ interface InputPasswordsProps {
   error?: FieldError;
 }
 
-
-const InputPassword:  React.FC<InputPasswordsProps> = ({
+const PasswordInput: React.FC<PasswordsInputProps> = ({
   register,
   name,
   lable,
@@ -66,4 +65,4 @@ const InputPassword:  React.FC<InputPasswordsProps> = ({
   );
 };
 
-export default InputPassword;
+export default PasswordInput;

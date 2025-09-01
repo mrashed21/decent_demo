@@ -1,6 +1,8 @@
 "use client";
 
 import MainNavbar from "./MainNavbar";
+import MobileBottomNavbar from "./MobileBottomNavbar";
+import MobileNavbar from "./MobileNavbar";
 import SubNavbar from "./SubNavbar";
 import TopNavbar from "./TopNavbar";
 
@@ -13,6 +15,10 @@ const Navbar = () => {
       <SubNavbar />
       {/* main navbar fo category menu */}
       <MainNavbar />
+      {/* navbar for mobile  */}
+      <MobileNavbar />
+      {/* mobile bottom navbar */}
+      <MobileBottomNavbar />
     </nav>
   );
 };

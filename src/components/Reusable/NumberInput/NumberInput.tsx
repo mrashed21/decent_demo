@@ -2,7 +2,7 @@ import React from "react";
 import { FieldError, UseFormRegister } from "react-hook-form";
 
 // New props for validation and error
-interface InputNumberProps {
+interface NumberInputProps {
   register: UseFormRegister<any>;
   name: string;
   lable?: string;
@@ -12,7 +12,7 @@ interface InputNumberProps {
   error?: FieldError;
 }
 
-const InputNumber: React.FC<InputNumberProps> = ({
+const NumberInput: React.FC<NumberInputProps> = ({
   register,
   name,
   lable,
@@ -41,4 +41,4 @@ const InputNumber: React.FC<InputNumberProps> = ({
   );
 };
 
-export default InputNumber;
+export default NumberInput;
