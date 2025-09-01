@@ -3,6 +3,6 @@ const FrontendLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  return <body>{children}</body>;
+  return <body className="font-inter">{children}</body>;
 };
 export default FrontendLayout;
