@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --font-inter: "inter", "sans-serif";
+  --font-montserrat: "montserrat", "sans-serif";
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,11 +17,9 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.PhoneInputInput:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 body {
