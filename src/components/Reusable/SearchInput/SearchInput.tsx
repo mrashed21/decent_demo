@@ -10,16 +10,16 @@ const SearchInput: React.FC<SearchInputProps> = ({
   className = "",
 }) => {
   return (
-    <div className={`relative w-full max-w-sm `}>
+    <div className={`relative w-full   `}>
       <input
         type="text"
         placeholder={placeholder}
         aria-label={placeholder}
-        className={`w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 text-sm focus:outline-none ${className}`}
+        className={`w-full border border-gray-300 rounded-lg pl-7 pr-2 py-2 text-sm focus:outline-none ${className}`}
       />
       <FaSearch
         size={16}
-        className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+        className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-400"
       />
     </div>
   );
