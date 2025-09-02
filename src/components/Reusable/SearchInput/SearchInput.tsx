@@ -10,7 +10,7 @@ const SearchInput: React.FC<SearchInputProps> = ({
   className = "",
 }) => {
   return (
-    <div className={`relative w-full   `}>
+    <div className={`relative w-full  `}>
       <input
         type="text"
         placeholder={placeholder}

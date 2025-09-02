@@ -19,7 +19,7 @@ const SubNavbar: React.FC<SubNavbarProps> = ({ setIsMobileMenuOpen }) => {
           <h1 className="text-xl font-semibold ">Decent</h1>
         </div>
         {/* search section */}
-        <div className="w-full xl:max-w-xl">
+        <div className="w-sm xl:max-w-xl">
           <SearchInput
             placeholder="Search for products..."
             className="bg-primary text-secondary"
