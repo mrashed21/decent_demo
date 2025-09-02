@@ -9,18 +9,21 @@ import TopNavbar from "./TopNavbar";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
-    <nav className="">
-      {/* top navbar for contact, links  */}
+    <nav>
+      {/* top navbar */}
       <TopNavbar />
-      {/* sub navbar for logo, search, cart, auth */}
+      {/* sub navbar */}
       <SubNavbar setIsMobileMenuOpen={setIsMobileMenuOpen} />
-      {/* main navbar fo category menu */}
+      {/* main navbar */}
       <MainNavbar />
-      {/* navbar for mobile  */}
-      {isMobileMenuOpen && (
-        <MobileNavbar setIsMobileMenuOpen={setIsMobileMenuOpen} />
-      )}
+      {/*Mobile side navbar */}
+      <MobileNavbar
+        isMobileMenuOpen={isMobileMenuOpen}
+        setIsMobileMenuOpen={setIsMobileMenuOpen}
+      />
+
       {/* mobile bottom navbar */}
       <MobileBottomNavbar />
     </nav>
