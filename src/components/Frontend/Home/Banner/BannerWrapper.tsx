@@ -4,17 +4,21 @@ import SideBanner from "./SideBanner";
 
 const BannerWrapper = () => {
   return (
-    <Container>
-      <section className="grid grid-cols-1 xl:grid-cols-3 gap-4 py-2 lg:py-5">
-        {/* Main Banner */}
-        <section className="xl:col-span-2">
-          <MainBanner />
-        </section>
+    <section className="bg-background">
+      <Container>
+        <section className="grid grid-cols-1 xl:grid-cols-3 gap-4 py-2 lg:py-5">
+          {/* Main Banner */}
+          <aside className="xl:col-span-2">
+            <MainBanner />
+          </aside>
 
-        {/* Side Banners */}
-        <SideBanner />
-      </section>
-    </Container>
+          {/* Side Banners */}
+          <aside>
+            <SideBanner />
+          </aside>
+        </section>
+      </Container>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 const TopNavbar = () => {
   return (
-    <section className="hidden lg:flex">
+    <section className="hidden lg:flex text-secondary">
       <Container>
         <div className="py-2.5 flex justify-between text-sm">
           <Link href={"tel:+8801712345678"} className="flex items-center gap-1">
