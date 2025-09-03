@@ -27,10 +27,13 @@ const SubNavbar: React.FC<SubNavbarProps> = ({ setIsMobileMenuOpen }) => {
         </div>
         {/* hamberger menu icon */}
         <div className="xl:hidden">
-          <FaBars
-            size={25}
+          <button
+            type="button"
+            className="cursor-pointer"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-          />
+          >
+            <FaBars size={25} />
+          </button>
         </div>
         {/* for xl screen */}
         <section className="hidden xl:flex items-center space-x-5">

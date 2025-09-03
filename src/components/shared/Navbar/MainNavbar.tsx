@@ -4,7 +4,6 @@ import Container from "@/components/Reusable/Container/Container";
 import Link from "next/link";
 import { JSX, useState } from "react";
 import {
-  FaBars,
   FaClock,
   FaCogs,
   FaGift,
@@ -117,7 +116,7 @@ const MainNavbar = () => {
   ];
 
   return (
-    <section className="bg-white shadow-md">
+    <section className="bg-white shadow-md text-secondary">
       <Container className="hidden xl:flex py-3">
         <div className="flex w-full items-center justify-between">
           {/* popular  brands menu*/}
