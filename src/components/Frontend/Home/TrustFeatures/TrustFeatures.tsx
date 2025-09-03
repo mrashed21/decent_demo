@@ -117,7 +117,7 @@ const TrustFeatures: React.FC = () => {
 
   return (
     <Container>
-      <div className=" bg-background">
+      <div className="mt-5 bg-background">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-2 lg:gap-4 bg-foreground px-4 py-6 rounded-lg shadow">
           {features.map((feature, index) => (
             <div

@@ -4,7 +4,7 @@ import SideBanner from "./SideBanner";
 
 const BannerWrapper = () => {
   return (
-    <section className="bg-background">
+    <section className="bg-foreground">
       <Container>
         <section className="grid grid-cols-1 xl:grid-cols-3 gap-4 py-2 lg:py-5">
           {/* Main Banner */}
