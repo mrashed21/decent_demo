@@ -64,7 +64,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
           <h2 className="font-bold text-lg">Menu</h2>
           <button
             onClick={handleCloseMenu}
-            className="p-2 rounded hover:bg-gray-100"
+            className="p-2 rounded hover:bg-gray-100 cursor-pointer"
             aria-label="Close menu"
           >
             <FaTimes size={18} />
@@ -78,7 +78,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
               <li key={item.label}>
                 <button
                   onClick={() => toggleSubMenu(item.label)}
-                  className="w-full flex items-center justify-between p-2 rounded hover:bg-gray-100"
+                  className="w-full flex items-center justify-between p-2 rounded hover:bg-gray-100 cursor-pointer"
                 >
                   <span>{item.label}</span>
                   <FaChevronDown

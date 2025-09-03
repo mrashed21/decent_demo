@@ -1,6 +1,11 @@
 "use client";
 const Footer = () => {
-  return <footer>Footer</footer>;
+  return (
+    <footer>
+      <div className="mt-20"></div>
+      Footer
+    </footer>
+  );
 };
 
 export default Footer;

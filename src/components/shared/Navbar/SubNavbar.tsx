@@ -29,6 +29,7 @@ const SubNavbar: React.FC<SubNavbarProps> = ({ setIsMobileMenuOpen }) => {
         <div className="xl:hidden">
           <button
             type="button"
+            className="cursor-pointer"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
           >
             <FaBars size={25} />
