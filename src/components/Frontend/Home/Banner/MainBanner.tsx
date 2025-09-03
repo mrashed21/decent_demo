@@ -47,10 +47,10 @@ const MainBanner = () => {
 
       {/* Custom Navigation */}
       <div className="hidden lg:flex absolute lg:left-[5px] -translate-x-full top-1/2 -translate-y-1/2 z-40  ">
-        <div className="swiper-button-prev !w-6 !h-6 lg:!w-10 lg:!h-10 after:!text-sm lg:after:!text-xl font-extrabold bg-primary/30 rounded-full p-2 after:!text-primary" />
+        <div className="swiper-button-prev !w-8 !h-8 xl:!w-10 xl:!h-10 after:!text-sm lg:after:!text-xl font-extrabold bg-primary/30 rounded-full p-2 after:!text-primary" />
       </div>
       <div className="hidden lg:flex absolute right-0 lg:right-[5px] translate-x-full top-1/2 -translate-y-1/2 z-40">
-        <div className="swiper-button-next !w-6 !h-6 lg:!w-10 lg:!h-10 after:!text-sm lg:after:!text-xl font-extrabold bg-primary/30 rounded-full p-2 after:!text-primary" />
+        <div className="swiper-button-next !w-8 !h-8 xl:!w-10 xl:!h-10 after:!text-sm lg:after:!text-xl font-extrabold bg-primary/30 rounded-full p-2 after:!text-primary" />
       </div>
     </div>
   );
