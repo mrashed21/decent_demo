@@ -1,4 +1,4 @@
-import { Product } from "@/components/Frontend/Home/BestDealProducts/BestDealProducts";
+import { Product } from "@/components/Reusable/ProductWrapper/ProductSlider";
 
 export const products: Product[] = [
   {

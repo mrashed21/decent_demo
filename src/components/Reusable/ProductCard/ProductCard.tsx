@@ -1,7 +1,6 @@
 "use client";
-
-import { Product } from "@/components/Frontend/Home/BestDealProducts/BestDealProducts";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
+import { Product } from "../ProductWrapper/ProductSlider";
 
 interface ProductCardProps {
   product: Product;
@@ -11,7 +10,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   const { name, main_price, discount_price, image, discount_percent, tag } =
     product;
   return (
-    <section className="group flex flex-col bg-primary p-2 rounded-xl lg:h-[350px]">
+    <section className="group flex flex-col bg-primary p-2 rounded-xl h-[320px] lg:h-[350px]">
       <div className="flex-grow">
         <div className="relative w-full h-48 overflow-hidden rounded-md mb-4">
           <img
@@ -51,12 +50,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
       {/* button section */}
       <div className="flex items-center gap-2 justify-between">
         {/* view details button */}
-        <button className="w-full bg-secondary text-primary text-[10px] lg:text-sm font-medium xl:font-semibold py-1.5 rounded-lg hover:bg-secondary/90 transition">
+        <button className="w-full bg-secondary text-primary text-[10px] xl:text-sm font-medium  py-1.5 rounded-lg hover:bg-secondary/90 transition cursor-pointer">
           View Details
         </button>
 
         {/* cart button */}
-        <button className="w-full bg-tertiary text-primary text-[10px]  lg:text-sm font-medium xl:font-semibold py-1.5 rounded-lg hover:bg-tertiary/90 transition">
+        <button className="w-full bg-tertiary text-primary text-[10px]  xl:text-sm font-medium py-1.5 rounded-lg hover:bg-tertiary/90 transition cursor-pointer">
           Add to Cart
         </button>
       </div>

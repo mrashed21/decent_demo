@@ -8,15 +8,15 @@ const MainBanner = () => {
   const slides = [
     {
       id: 1,
-      img: "https://dazzle.sgp1.cdn.digitaloceanspaces.com/54736/honor.jpg",
+      img: "https://i.ibb.co.com/NdR4fX6P/photo-1575909812264-6902b55846ad-w-500-auto-format-fit-crop-q-60-ixlib-rb-4-1.jpg",
     },
     {
       id: 2,
-      img: "https://dazzle.sgp1.cdn.digitaloceanspaces.com/54748/IPHONE-16-series.jpg",
+      img: "https://i.ibb.co.com/Cp2f6QZn/photo-1513530534585-c7b1394c6d51-w-500-auto-format-fit-crop-q-60-ixlib-rb-4-1.jpg",
     },
     {
       id: 3,
-      img: "https://dazzle.sgp1.cdn.digitaloceanspaces.com/54748/IPHONE-16-series.jpg",
+      img: "https://i.ibb.co.com/J0vN05P/photo-1519389950473-47ba0277781c-w-500-auto-format-fit-crop-q-60-ixlib-rb-4-1.jpg",
     },
   ];
 
@@ -38,7 +38,7 @@ const MainBanner = () => {
               <img
                 src={slide.img}
                 alt={`Slide ${slide.id}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full "
               />
             </div>
           </SwiperSlide>
@@ -49,6 +49,7 @@ const MainBanner = () => {
       <div className="hidden lg:flex absolute lg:left-[5px] -translate-x-full top-1/2 -translate-y-1/2 z-40  ">
         <div className="swiper-button-prev !w-8 !h-8 xl:!w-10 xl:!h-10 after:!text-sm lg:after:!text-xl font-extrabold bg-primary/30 rounded-full p-2 after:!text-primary" />
       </div>
+
       <div className="hidden lg:flex absolute right-0 lg:right-[5px] translate-x-full top-1/2 -translate-y-1/2 z-40">
         <div className="swiper-button-next !w-8 !h-8 xl:!w-10 xl:!h-10 after:!text-sm lg:after:!text-xl font-extrabold bg-primary/30 rounded-full p-2 after:!text-primary" />
       </div>

@@ -1,12 +1,13 @@
+
 import ProductsWrapper from "@/components/Reusable/ProductWrapper/ProductsWrapper";
 import { products } from "@/data/ProductData";
 
-const BestDealProducts = () => {
+const RecentlyAddedProducts = () => {
   return (
     <section>
-      <ProductsWrapper name="Best Deal Product" href="/" product={products} />
+      <ProductsWrapper name="Recently Added Product" href="/" product={products} />
     </section>
   );
 };
 
-export default BestDealProducts;
+export default RecentlyAddedProducts;

@@ -6,13 +6,13 @@ import { JSX, useState } from "react";
 import {
   FaClock,
   FaCogs,
-  FaGift,
   FaHeadphones,
   FaLaptop,
   FaMobileAlt,
   FaTabletAlt,
   FaTv,
 } from "react-icons/fa";
+import { FaBars } from "react-icons/fa6";
 
 type LinkItem = {
   label: string;
@@ -105,14 +105,6 @@ const MainNavbar = () => {
         { label: "LG", href: "/tv/lg" },
       ],
     },
-    {
-      name: "ONLINE EXCLUSIVE",
-      icon: <FaGift className="inline mr-1" />,
-      links: [
-        { label: "Deals", href: "/exclusive/deals" },
-        { label: "New Launches", href: "/exclusive/new" },
-      ],
-    },
   ];
 
   return (
@@ -120,12 +112,13 @@ const MainNavbar = () => {
       <Container className="hidden xl:flex py-3">
         <div className="flex w-full items-center justify-between">
           {/* popular  brands menu*/}
-          {/* <div>
+          <div>
             <button className="cursor-pointer">
               <FaBars size={20} className="inline mr-2" />
             </button>
-          </div> */}
-          {/* category */}
+          </div>
+
+          {/* category  */}
           <div className="flex gap-8 items-center relative">
             {menuItems.map((item, idx) => (
               <div
@@ -158,12 +151,13 @@ const MainNavbar = () => {
             ))}
           </div>
 
+          <div className=""></div>
           {/* hot offer buton */}
-          <div>
+          {/* <div>
             <button className="px-4 py-2 rounded-lg bg-secondary text-tertiary text-sm transition uppercase font-semibold">
               Online Exclusive
             </button>
-          </div>
+          </div> */}
         </div>
       </Container>
     </section>
