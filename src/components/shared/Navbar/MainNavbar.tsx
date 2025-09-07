@@ -13,6 +13,7 @@ import {
   FaTv,
 } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
+import CategoryModal from "./CategoryModal";
 
 type LinkItem = {
   label: string;
@@ -27,6 +28,7 @@ type MenuItem = {
 
 const MainNavbar = () => {
   const [hovered, setHovered] = useState<number | null>(null);
+  const [categoryOpen, setCategoryOpen] = useState(false);
 
   const menuItems: MenuItem[] = [
     {
@@ -113,7 +115,13 @@ const MainNavbar = () => {
         <div className="flex w-full items-center justify-between">
           {/* popular  brands menu*/}
           <div>
-            <button className="cursor-pointer">
+            <button
+              type="button"
+              onClick={() => {
+                setCategoryOpen(true);
+              }}
+              className="cursor-pointer"
+            >
               <FaBars size={20} className="inline mr-2" />
             </button>
           </div>
@@ -160,6 +168,7 @@ const MainNavbar = () => {
           </div> */}
         </div>
       </Container>
+      {categoryOpen && <CategoryModal setCategoryOpen={setCategoryOpen} />}
     </section>
   );
 };

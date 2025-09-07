@@ -1,6 +1,9 @@
 import BannerWrapper from "@/components/Frontend/Home/Banner/BannerWrapper";
 import BestDealProducts from "@/components/Frontend/Home/BestDealProducts/BestDealProducts";
+import Blogs from "@/components/Frontend/Home/Blogs/Blogs";
+import Brands from "@/components/Frontend/Home/Brands/Brands";
 import CategoryWrapper from "@/components/Frontend/Home/Category/CategoryWrapper";
+import HotDealWrapper from "@/components/Frontend/Home/HotDeal/HotDealWrapper";
 import PosterOne from "@/components/Frontend/Home/Poster/PosterOne";
 import PosterTwo from "@/components/Frontend/Home/Poster/PosterTwo";
 import RecentlyAddedProducts from "@/components/Frontend/Home/RecentlyAdded/RecentlyAddedProducts";
@@ -20,6 +23,9 @@ const Home = () => {
       <RecentlyAddedProducts />
       <PosterTwo />
       <TrendingProducts />
+      <HotDealWrapper />
+      <Brands />
+      <Blogs />
     </section>
   );
 };
