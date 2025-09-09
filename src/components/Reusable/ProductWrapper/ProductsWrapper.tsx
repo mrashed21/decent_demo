@@ -1,19 +1,25 @@
 "use client";
 
 import Container from "@/components/Reusable/Container/Container";
+import { Product } from "@/types/productTypes";
 import Link from "next/link";
 import ProductSlider from "./ProductSlider";
-import { Product } from "./ProductSlider";
 
 interface ProductsWrapperProps {
   name: string;
   href: string;
   product: Product[];
+  className?: string;
 }
 
-const ProductsWrapper = ({ name, href, product }: ProductsWrapperProps) => {
+const ProductsWrapper = ({
+  name,
+  href,
+  product,
+  className = "",
+}: ProductsWrapperProps) => {
   return (
-    <section className="py-5 lg:py-12 bg-foreground">
+    <section className={`py-5 lg:py-12 bg-foreground ${className}`}>
       <Container>
         <div className="flex items-center justify-between mb-8">
           <h2 className="lg:text-2xl lg:font-semibold text-secondary">

@@ -1,16 +1,24 @@
 "use client";
+import { Product } from "@/types/productTypes";
+import Link from "next/link";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
-import { Product } from "../ProductWrapper/ProductSlider";
 
 interface ProductCardProps {
   product: Product;
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
-  const { name, main_price, discount_price, image, discount_percent, tag } =
-    product;
+  const {
+    name,
+    main_price,
+    discount_price,
+    image,
+    discount_percent,
+    tag,
+    slug,
+  } = product;
   return (
-    <section className="group flex flex-col bg-primary p-2 rounded-xl h-[320px] lg:h-[350px]">
+    <section className="group flex flex-col bg-primary p-2 py-3 rounded-xl h-[320px] lg:h-[350px]">
       <div className="flex-grow">
         <div className="relative w-full h-48 overflow-hidden rounded-md mb-4">
           <img
@@ -50,9 +58,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
       {/* button section */}
       <div className="flex items-center gap-2 justify-between">
         {/* view details button */}
-        <button className="w-full bg-secondary text-primary text-[10px] xl:text-sm font-medium  py-1.5 rounded-lg hover:bg-secondary/90 transition cursor-pointer">
+        <Link
+          href={`/product/${slug}`}
+          className="w-full bg-secondary text-primary text-[10px] xl:text-sm font-medium  py-1.5 rounded-lg hover:bg-secondary/90 transition cursor-pointe text-center"
+        >
           View Details
-        </button>
+        </Link>
 
         {/* cart button */}
         <button className="w-full bg-tertiary text-primary text-[10px]  xl:text-sm font-medium py-1.5 rounded-lg hover:bg-tertiary/90 transition cursor-pointer">

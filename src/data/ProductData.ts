@@ -1,4 +1,4 @@
-import { Product } from "@/components/Reusable/ProductWrapper/ProductSlider";
+import { Product } from "@/types/productTypes";
 
 export const products: Product[] = [
   {
@@ -12,6 +12,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Phone",
+    slug: "apple-iphone-15-pro",
   },
   {
     name: "Samsung Galaxy S24 Ultra",
@@ -24,6 +25,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "Phone",
+    slug: "samsung-galaxy-s24-ultra",
   },
   {
     name: "Google Pixel 8 Pro",
@@ -36,6 +38,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Phone",
+    slug: "google-pixel-8-pro",
   },
   {
     name: "OnePlus 12",
@@ -48,6 +51,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "Phone",
+    slug: "oneplus-12",
   },
   {
     name: "Apple iPhone SE (2024)",
@@ -60,6 +64,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Phone",
+    slug: "apple-iphone-se-2024",
   },
   {
     name: "Samsung Galaxy A54",
@@ -72,6 +77,7 @@ export const products: Product[] = [
     discount_percent: 20.0,
     tag: "Popular",
     category: "Phone",
+    slug: "samsung-galaxy-a54",
   },
   {
     name: "Xiaomi 14 Ultra",
@@ -84,6 +90,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "New",
     category: "Phone",
+    slug: "xiaomi-14-ultra",
   },
   {
     name: "Motorola Edge 50 Pro",
@@ -96,6 +103,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Top Sell",
     category: "Phone",
+    slug: "motorola-edge-50-pro",
   },
   {
     name: "Vivo X100 Pro",
@@ -108,6 +116,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Popular",
     category: "Phone",
+    slug: "vivo-x100-pro",
   },
   {
     name: "Realme GT 5 Pro",
@@ -120,6 +129,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "New",
     category: "Phone",
+    slug: "realme-gt-5-pro",
   },
   {
     name: "Apple iPad Pro (M4)",
@@ -132,6 +142,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Top Sell",
     category: "Tablet",
+    slug: "apple-ipad-pro-m4",
   },
   {
     name: "Samsung Galaxy Tab S9",
@@ -144,6 +155,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "Tablet",
+    slug: "samsung-galaxy-tab-s9",
   },
   {
     name: "Microsoft Surface Pro 10",
@@ -156,6 +168,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Tablet",
+    slug: "microsoft-surface-pro-10",
   },
   {
     name: "Lenovo Tab P12 Pro",
@@ -168,6 +181,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "Tablet",
+    slug: "lenovo-tab-p12-pro",
   },
   {
     name: "Amazon Fire HD 10",
@@ -180,6 +194,7 @@ export const products: Product[] = [
     discount_percent: 20.0,
     tag: "Top Sell",
     category: "Tablet",
+    slug: "amazon-fire-hd-10",
   },
   {
     name: "Xiaomi Pad 6",
@@ -192,6 +207,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "New",
     category: "Tablet",
+    slug: "xiaomi-pad-6",
   },
   {
     name: "Huawei MatePad Pro 13.2",
@@ -204,6 +220,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "Tablet",
+    slug: "huawei-matepad-pro-13-2",
   },
   {
     name: "Google Pixel Tablet",
@@ -216,6 +233,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Tablet",
+    slug: "google-pixel-tablet",
   },
   {
     name: "Apple iPad Air (M2)",
@@ -228,6 +246,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "Tablet",
+    slug: "apple-ipad-air-m2",
   },
   {
     name: "Samsung Galaxy Tab A9+",
@@ -240,6 +259,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Tablet",
+    slug: "samsung-galaxy-tab-a9-plus",
   },
   {
     name: "Apple Watch Series 9",
@@ -252,6 +272,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Smart Watch",
+    slug: "apple-watch-series-9",
   },
   {
     name: "Samsung Galaxy Watch 6",
@@ -264,6 +285,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "Smart Watch",
+    slug: "samsung-galaxy-watch-6",
   },
   {
     name: "Google Pixel Watch 2",
@@ -276,6 +298,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Smart Watch",
+    slug: "google-pixel-watch-2",
   },
   {
     name: "Fitbit Versa 4",
@@ -288,6 +311,7 @@ export const products: Product[] = [
     discount_percent: 20.0,
     tag: "Popular",
     category: "Smart Watch",
+    slug: "fitbit-versa-4",
   },
   {
     name: "Garmin Forerunner 965",
@@ -300,6 +324,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Smart Watch",
+    slug: "garmin-forerunner-965",
   },
   {
     name: "Huawei Watch 4 Pro",
@@ -312,6 +337,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "New",
     category: "Smart Watch",
+    slug: "huawei-watch-4-pro",
   },
   {
     name: "Amazfit Balance",
@@ -324,6 +350,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Popular",
     category: "Smart Watch",
+    slug: "amazfit-balance",
   },
   {
     name: "OnePlus Watch 2",
@@ -336,6 +363,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "New",
     category: "Smart Watch",
+    slug: "oneplus-watch-2",
   },
   {
     name: "Suunto Race",
@@ -348,6 +376,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Top Sell",
     category: "Smart Watch",
+    slug: "suunto-race",
   },
   {
     name: "Coros Pace 3",
@@ -360,6 +389,7 @@ export const products: Product[] = [
     discount_percent: 20.0,
     tag: "Popular",
     category: "Smart Watch",
+    slug: "coros-pace-3",
   },
   {
     name: "Apple MacBook Air (M3)",
@@ -372,6 +402,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Laptop",
+    slug: "apple-macbook-air-m3",
   },
   {
     name: "Dell XPS 15",
@@ -384,6 +415,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "Laptop",
+    slug: "dell-xps-15",
   },
   {
     name: "HP Spectre x360",
@@ -396,6 +428,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Laptop",
+    slug: "hp-spectre-x360",
   },
   {
     name: "Lenovo ThinkPad X1 Carbon Gen 12",
@@ -408,6 +441,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "Laptop",
+    slug: "lenovo-thinkpad-x1-carbon-gen-12",
   },
   {
     name: "Microsoft Surface Laptop Studio 2",
@@ -420,6 +454,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Laptop",
+    slug: "microsoft-surface-laptop-studio-2",
   },
   {
     name: "Asus ROG Zephyrus G14",
@@ -432,6 +467,7 @@ export const products: Product[] = [
     discount_percent: 20.0,
     tag: "Gaming",
     category: "Laptop",
+    slug: "asus-rog-zephyrus-g14",
   },
   {
     name: "Acer Swift 5",
@@ -444,6 +480,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "Laptop",
+    slug: "acer-swift-5",
   },
   {
     name: "Razer Blade 16",
@@ -456,6 +493,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Gaming",
     category: "Laptop",
+    slug: "razer-blade-16",
   },
   {
     name: "LG Gram 16",
@@ -468,6 +506,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Laptop",
+    slug: "lg-gram-16",
   },
   {
     name: "Google Pixelbook Go",
@@ -480,6 +519,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Chromebook",
     category: "Laptop",
+    slug: "google-pixelbook-go",
   },
   {
     name: "Sony WH-1000XM5",
@@ -492,6 +532,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "Headphones",
+    slug: "sony-wh-1000xm5",
   },
   {
     name: "Bose QuietComfort Headphones",
@@ -504,6 +545,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Headphones",
+    slug: "bose-quietcomfort-headphones",
   },
   {
     name: "Sennheiser Momentum 4 Wireless",
@@ -516,6 +558,7 @@ export const products: Product[] = [
     discount_percent: 20.0,
     tag: "New",
     category: "Headphones",
+    slug: "sennheiser-momentum-4-wireless",
   },
   {
     name: "Apple AirPods Pro (2nd Gen)",
@@ -528,6 +571,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Headphones",
+    slug: "apple-airpods-pro-2nd-gen",
   },
   {
     name: "JBL Tour Pro 2",
@@ -540,6 +584,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "Headphones",
+    slug: "jbl-tour-pro-2",
   },
   {
     name: "Logitech MX Master 3S",
@@ -552,6 +597,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Top Sell",
     category: "Mouse",
+    slug: "logitech-mx-master-3s",
   },
   {
     name: "Razer DeathAdder V3 Pro",
@@ -564,6 +610,7 @@ export const products: Product[] = [
     discount_percent: 20.0,
     tag: "Gaming",
     category: "Mouse",
+    slug: "razer-deathadder-v3-pro",
   },
   {
     name: "Apple Magic Mouse",
@@ -576,6 +623,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Popular",
     category: "Mouse",
+    slug: "apple-magic-mouse",
   },
   {
     name: "Samsung 4K UHD Smart TV",
@@ -588,6 +636,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Top Sell",
     category: "TV",
+    slug: "samsung-4k-uhd-smart-tv",
   },
   {
     name: "LG C3 Series OLED TV",
@@ -600,6 +649,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Popular",
     category: "TV",
+    slug: "lg-c3-series-oled-tv",
   },
   {
     name: "Sony A95K QD-OLED",
@@ -612,6 +662,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "New",
     category: "TV",
+    slug: "sony-a95k-qd-oled",
   },
   {
     name: "Hisense U8K Mini-LED",
@@ -624,6 +675,7 @@ export const products: Product[] = [
     discount_percent: 20.0,
     tag: "Popular",
     category: "TV",
+    slug: "hisense-u8k-mini-led",
   },
   {
     name: "TCL QM8 Mini-LED",
@@ -636,6 +688,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "TV",
+    slug: "tcl-qm8-mini-led",
   },
   {
     name: "DJI Mini 4 Pro",
@@ -648,6 +701,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Top Sell",
     category: "Drone",
+    slug: "dji-mini-4-pro",
   },
   {
     name: "GoPro HERO12 Black",
@@ -660,6 +714,7 @@ export const products: Product[] = [
     discount_percent: 20.0,
     tag: "Popular",
     category: "Camera",
+    slug: "gopro-hero12-black",
   },
   {
     name: "Canon EOS R5",
@@ -672,6 +727,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "New",
     category: "Camera",
+    slug: "canon-eos-r5",
   },
   {
     name: "Xbox Series X",
@@ -684,6 +740,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Gaming",
     category: "Console",
+    slug: "xbox-series-x",
   },
   {
     name: "PlayStation 5 Slim",
@@ -696,6 +753,7 @@ export const products: Product[] = [
     discount_percent: 15.0,
     tag: "Top Sell",
     category: "Console",
+    slug: "playstation-5-slim",
   },
   {
     name: "Nintendo Switch OLED",
@@ -708,6 +766,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Popular",
     category: "Console",
+    slug: "nintendo-switch-oled",
   },
   {
     name: "Amazon Echo Dot (5th Gen)",
@@ -720,6 +779,7 @@ export const products: Product[] = [
     discount_percent: 30.0,
     tag: "Top Sell",
     category: "Smart Speaker",
+    slug: "amazon-echo-dot-5th-gen",
   },
   {
     name: "Google Nest Mini",
@@ -732,6 +792,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Popular",
     category: "Smart Speaker",
+    slug: "google-nest-mini",
   },
   {
     name: "Sonos Era 100",
@@ -744,6 +805,7 @@ export const products: Product[] = [
     discount_percent: 10.0,
     tag: "Top Sell",
     category: "Smart Speaker",
+    slug: "sonos-era-100",
   },
   {
     name: "Anker PowerCore 20000",
@@ -756,5 +818,6 @@ export const products: Product[] = [
     discount_percent: 20.0,
     tag: "Popular",
     category: "Power Bank",
+    slug: "anker-powercore-20000",
   },
 ];

@@ -1,21 +1,12 @@
 "use client";
 
 import ProductCard from "@/components/Reusable/ProductCard/ProductCard";
+import { Product } from "@/types/productTypes";
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-export interface Product {
-  name: string;
-  main_price: number;
-  discount_price: number;
-  image: string[];
-  discount_percent: number;
-  tag: string;
-  category: string;
-}
 
 interface ProductSliderProps {
   product: Product[];

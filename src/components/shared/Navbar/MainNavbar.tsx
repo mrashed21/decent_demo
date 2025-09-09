@@ -110,7 +110,7 @@ const MainNavbar = () => {
   ];
 
   return (
-    <section className="bg-white shadow-md text-secondary">
+    <section className="bg-primary shadow-md text-secondary">
       <Container className="hidden xl:flex py-3">
         <div className="flex w-full items-center justify-between">
           {/* popular  brands menu*/}
@@ -136,19 +136,19 @@ const MainNavbar = () => {
                 onMouseLeave={() => setHovered(null)}
               >
                 {/* Menu Title with Icon */}
-                <span className="cursor-pointer text-sm font-medium hover:text-orange-500 transition flex items-center gap-1">
+                <span className="cursor-pointer text-sm font-medium hover:text-tertiary transition flex items-center gap-1">
                   {item.icon}
                   {item.name}
                 </span>
 
                 {/* Dropdown */}
                 {item.links.length > 0 && hovered === idx && (
-                  <div className="absolute top-full left-0 mt-2 w-[350px] bg-white rounded-md shadow-lg p-5 grid grid-cols-2 gap-3 z-50">
+                  <div className="absolute top-2.5 left-0 mt-2 w-[350px] bg-primary rounded-md shadow-lg p-5 grid grid-cols-2 gap-3 z-50">
                     {item.links.map((link, i) => (
                       <Link
                         key={i}
                         href={link.href}
-                        className="text-gray-700 text-sm hover:text-orange-500 transition"
+                        className="text-gray-700 text-sm hover:text-tertiary transition"
                       >
                         {link.label}
                       </Link>

@@ -2,6 +2,7 @@
 
 import Container from "@/components/Reusable/Container/Container";
 import SearchInput from "@/components/Reusable/SearchInput/SearchInput";
+import Link from "next/link";
 import { FaBars, FaGift } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { PiNoteDuotone } from "react-icons/pi";
@@ -16,7 +17,9 @@ const SubNavbar: React.FC<SubNavbarProps> = ({ setIsMobileMenuOpen }) => {
       <Container className="flex items-center justify-between py-4 px-2  gap-5">
         {/* logo section */}
         <div className="">
-          <h1 className="text-xl font-semibold ">Decent</h1>
+          <Link href="/" className="text-xl font-semibold ">
+            Decent
+          </Link>
         </div>
         {/* search section */}
         <div className="w-sm xl:max-w-xl">

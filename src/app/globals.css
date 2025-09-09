@@ -12,6 +12,7 @@
   --secondary: #000000;
   --tertiary: #e4c7aa;
   --btnbackground: #1c2124;
+  --borderColor: #d1914f;
 }
 
 @theme inline {
@@ -21,6 +22,7 @@
   --color-secondary: var(--secondary);
   --color-tertiary: var(--tertiary);
   --color-btnbackground: var(--btnbackground);
+  --color-borderColor: var(--borderColor);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

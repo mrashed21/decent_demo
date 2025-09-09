@@ -3,7 +3,7 @@ import Navbar from "@/components/shared/Navbar/Navbar";
 
 const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="min-h-[100dvh] flex flex-col">
+    <div className="min-h-[100dvh] flex flex-col font-inter">
       <Navbar />
       <main className="flex-grow">
         <section>{children}</section>
