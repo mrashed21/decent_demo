@@ -76,7 +76,7 @@ const Brands: React.FC = () => {
                 prevEl: ".custom-prev",
                 nextEl: ".custom-next",
               }}
-            //   loop
+              //   loop
               slidesPerView={1.2}
               slidesPerGroup={1}
               breakpoints={{

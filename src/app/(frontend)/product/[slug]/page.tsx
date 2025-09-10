@@ -12,7 +12,7 @@ interface ProductDetailsProps {
 
 export async function generateMetadata(
   { params }: ProductDetailsProps,
-  parent: ResolvingMetadata
+  // parent: ResolvingMetadata
 ): Promise<Metadata> {
   const { slug } = params;
 

@@ -41,14 +41,13 @@ const ProductDetailsData = ({ product }: ProductDetailsProps) => {
     slug,
   } = product;
 
-  const [videoUrl, setVideoUrl] = useState("");
   const [isDescriptionShow, setIsDescriptionShow] = useState(false);
   const [selectedImage, setSelectedImage] = useState(image[0]);
   const [showMore, setShowMore] = useState<boolean>(false);
 
+  console.log(discount_price, tag, slug);
   const handleMainImageClick = (image: string) => {
     setSelectedImage(image);
-    setVideoUrl("");
   };
 
   const items: Item[] = [
@@ -315,8 +314,8 @@ const ProductDetailsData = ({ product }: ProductDetailsProps) => {
               <h2 className="text-sm font-semibold">
                 Display:
                 <span className="font-normal text-xs">
-                  6.9" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision,
-                  2000 nits brightness
+                  6.9&quot;LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby
+                  Vision, 2000 nits brightness
                 </span>
               </h2>
               <h2 className="text-sm font-semibold">
@@ -359,9 +358,8 @@ const ProductDetailsData = ({ product }: ProductDetailsProps) => {
             {/* variant image */}
             <div className="flex items-center space-x-2 my-2">
               {image?.map((img, index) => (
-                <div className="h-16 w-16">
+                <div key={index} className="h-16 w-16">
                   <img
-                    key={index}
                     src={img}
                     alt={`image-${index}`}
                     className="h-full w-full rounded-md"
@@ -551,7 +549,7 @@ const ProductDetailsData = ({ product }: ProductDetailsProps) => {
                   checked
                   className="mr-2 accent-tertiary"
                 />
-                I agree to Decent's{" "}
+                I agree to Decentt&rsquo;
                 <a href="#" className="underline text-blue-500">
                   terms & conditions
                 </a>

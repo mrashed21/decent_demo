@@ -84,7 +84,7 @@ const blogs: Blog[] = [
 const Blogs: React.FC = () => {
   return (
     <section className=" py-8 lg:py-12">
-      <Container >
+      <Container>
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-lg lg:text-xl font-semibold">
