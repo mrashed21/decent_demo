@@ -110,16 +110,14 @@ const MainNavbar = () => {
   ];
 
   return (
-    <section className="bg-primary shadow-md text-secondary">
+    <section className="bg-primary shadow-md text-secondary relative">
       <Container className="hidden xl:flex py-3">
-        <div className="flex w-full items-center justify-between">
+        <div className="flex w-full items-center justify-between ">
           {/* popular  brands menu*/}
           <div>
             <button
               type="button"
-              onClick={() => {
-                setCategoryOpen(true);
-              }}
+              onClick={() => setCategoryOpen((prev) => !prev)}
               className="cursor-pointer"
             >
               <FaBars size={20} className="inline mr-2" />
@@ -168,7 +166,11 @@ const MainNavbar = () => {
           </div> */}
         </div>
       </Container>
-      {categoryOpen && <CategoryModal setCategoryOpen={setCategoryOpen} />}
+      {categoryOpen && (
+        <div className="absolute top-full left-5 w-full z-50">
+          <CategoryModal setCategoryOpen={setCategoryOpen} />
+        </div>
+      )}
     </section>
   );
 };

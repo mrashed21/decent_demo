@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { FiX } from "react-icons/fi";
 
 interface Category {
   id: string;
@@ -25,22 +26,6 @@ const CategoryModal: React.FC<CategoryModalProps> = ({ setCategoryOpen }) => {
       document.body.style.overflow = "auto";
     };
   }, []);
-
-  // Handle outside click
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        modalRef.current &&
-        !modalRef.current.contains(event.target as Node)
-      ) {
-        setCategoryOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [setCategoryOpen]);
 
   const categories: Category[] = [
     {
@@ -130,58 +115,63 @@ const CategoryModal: React.FC<CategoryModalProps> = ({ setCategoryOpen }) => {
   };
 
   return (
-    <div className="">
-      <div className="fixed inset-0 flex top-36 left-0 z-50 p-4">
-        <div
-          ref={modalRef}
-          className="bg-background rounded-lg shadow-2xl w-full max-w-4xl h-[80vh] overflow-hidden flex relative"
-        >
-          {/* Sidebar */}
-          <div className="w-1/3 bg-foreground overflow-y-auto">
-            <div className="p-6">
-              <ul className="space-y-2">
-                {categories.map((category) => (
-                  <li key={category.id}>
-                    <button
-                      onClick={() => setActiveCategory(category.id)}
-                      className={`w-full text-left px-4 py-3 rounded-lg transition-colors ${
-                        activeCategory === category.id
-                          ? "bg-tertiary text-primary"
-                          : "text-secondary hover:bg-gray-200"
-                      }`}
-                    >
-                      {category.name}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* Content */}
-          <div className="w-2/3 bg-primary overflow-y-auto p-6">
-            <h2 className="text-2xl font-bold text-secondary mb-6 font-montserrat">
-              {activeCategoryData?.name}
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {activeCategoryData?.items.map((item, index) => (
-                <div
-                  key={index}
-                  onClick={handleItemClick}
-                  className="border border-foreground rounded-lg p-4 text-center hover:bg-foreground transition-colors cursor-pointer"
+    <div
+      ref={modalRef}
+      className="bg-background rounded-lg shadow-2xl w-full max-w-4xl h-[80vh] overflow-hidden flex relative"
+    >
+      {/* Sidebar */}
+      <div className="w-1/3 bg-foreground overflow-y-auto">
+        <div className="p-6">
+          <ul className="space-y-2">
+            {categories.map((category) => (
+              <li key={category.id}>
+                <button
+                  onClick={() => setActiveCategory(category.id)}
+                  className={`w-full text-left px-4 py-3 rounded-lg transition-colors cursor-pointer ${
+                    activeCategory === category.id
+                      ? "bg-tertiary text-primary"
+                      : "text-secondary hover:bg-gray-200"
+                  }`}
                 >
-                  <div className="h-16 flex items-center justify-center mb-3">
-                    <img
-                      src={item.img}
-                      alt={item.name}
-                      className="h-16 w-16 object-contain"
-                    />
-                  </div>
-                  <p className="text-secondary font-medium">{item.name}</p>
-                </div>
-              ))}
+                  {category.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="w-2/3 bg-primary overflow-y-auto p-6 relative">
+        <h2 className="text-2xl font-bold text-secondary mb-6 font-montserrat">
+          {activeCategoryData?.name}
+        </h2>
+        <button
+          className="absolute top-4 right-4 bg-secondary text-primary p-2 rounded-full cursor-pointer"
+          onClick={() => {
+            setCategoryOpen(false);
+          }}
+        >
+          <FiX size={15} />
+        </button>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {activeCategoryData?.items.map((item, index) => (
+            <div
+              key={index}
+              onClick={handleItemClick}
+              className="border border-foreground rounded-lg p-4 text-center hover:bg-foreground transition-colors cursor-pointer"
+            >
+              <div className="h-16 flex items-center justify-center mb-3">
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="h-16 w-16 object-contain"
+                />
+              </div>
+              <p className="text-secondary font-medium">{item.name}</p>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

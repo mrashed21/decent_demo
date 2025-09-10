@@ -549,7 +549,7 @@ const ProductDetailsData = ({ product }: ProductDetailsProps) => {
                   checked
                   className="mr-2 accent-tertiary"
                 />
-                I agree to Decentt&rsquo;
+                I agree to Decent&rsquo;s 
                 <a href="#" className="underline text-blue-500">
                   terms & conditions
                 </a>
